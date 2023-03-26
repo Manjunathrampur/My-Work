@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-22T13:50:08 IST" name="Default suite" finished-at="2023-03-22T13:51:30 IST" duration-ms="82031">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:W_runner.Runner_login@505fc5a4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-22T13:50:08 IST" name="Default test" finished-at="2023-03-22T13:51:30 IST" duration-ms="82031">
+      <class name="W_runner.Runner_login">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:W_runner.Runner_login@505fc5a4]" started-at="2023-03-22T13:50:08 IST" name="setUpClass" finished-at="2023-03-22T13:50:10 IST" duration-ms="1883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:W_runner.Runner_login@505fc5a4]" started-at="2023-03-22T13:50:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-22T13:51:30 IST" duration-ms="79713" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user enters valid credentials and try to login home page should be displayed."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepDefnitions.Login.home_page_should_be_displayed(Login.java:53)
+at ✽.home page should be displayed(file:///C:/Users/Dell/eclipse2-workspace/Cucumber/src/test/java/fearures/Login.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:W_runner.Runner_login@505fc5a4]" started-at="2023-03-22T13:51:30 IST" name="tearDownClass" finished-at="2023-03-22T13:51:30 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- W_runner.Runner_login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
